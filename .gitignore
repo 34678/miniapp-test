@@ -2,3 +2,4 @@ node_modules/
 dist/
 weixinapp-test
 .DS_Store
+uni-app-component-test
