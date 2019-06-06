@@ -1,0 +1,30 @@
+
+
+<template>
+     <textarea placeholder="focus聚焦" focus="{{isfocus}}"  c-bind:blur="bindblurevent"></textarea>
+</template>
+
+<script>
+class Textarea {
+  data = {
+    isfocus: false
+  }
+  methods = {
+    bindblurevent()  {
+      console.log('blur')
+      this.isfocus = false;
+    }
+  }
+  mounted = function(res) {
+    setTimeout(() => {
+        this.isfocus = true;
+    }, 300);
+  }
+};
+export default new Textarea();
+</script>
+<script cml-type="json">
+{
+  "base": {}
+}
+</script>

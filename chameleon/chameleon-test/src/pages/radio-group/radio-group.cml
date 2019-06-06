@@ -1,0 +1,46 @@
+<template>
+  <c-radio-group
+    option="{{ radioGroupOption }}"
+    c-bind:groupchange="groupChangeHandler"
+    >
+  </c-radio-group>
+</template>
+<script>
+class CRadio {
+  data = {
+    radioGroupOption: [
+      {
+        checked: false,
+        label: 'Option1',
+      }, 
+      {
+        checked: false,
+        label: 'Option2'
+      }, 
+      {
+        checked: false,
+        label: 'Option3',
+        disabled: true
+      }
+    ],
+    radioSelect: ''
+  }
+
+  methods = {
+    groupChangeHandler (e) {
+      this.radioSelect = this.radioGroupOption[e.detail.index].label
+    }
+  }
+}
+
+export default new CRadio();
+</script>
+<script cml-type="json">
+{
+  "base": {
+      "usingComponents": {
+          "c-radio-group": "cml-ui/components/c-radio-group/c-radio-group"
+      }
+  }
+}
+</script>

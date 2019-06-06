@@ -1,0 +1,26 @@
+<template>
+  <radio
+    checked="{{ radioValue }}"
+    label="Option"
+    c-bind:change="valueChange"
+    >
+  </radio>
+</template>
+<script>
+class Index {
+  data = {
+    radioValue: false
+  }
+  methods = {
+    valueChange (e) {
+      this.radioValue = e.detail.value;
+    }
+  }
+}
+export default new Index();
+</script>
+<script cml-type="json">
+{
+  "base": {}
+}
+</script>

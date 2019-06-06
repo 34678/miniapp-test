@@ -1,0 +1,41 @@
+<template>
+
+  <view class="container">
+  <!-- <canvas style='width: 300px; height: 200px;' canvasId='canvas'  style='background-color:red'></canvas> -->
+    <!-- <video
+      class="video"
+      src="{{videoSrc}}"
+      autoplay="{{true}}"
+      controls="{{true}}"
+      c-bind:start="onstart"
+      c-bind:pause="onpause"
+      c-bind:finish="onfinish"
+      c-bind:fail="onfail"
+    >
+    <text>dandhsa</text>
+    </video> -->
+  </view>
+</template>
+
+<script>
+import cml from 'chameleon-api'
+class Video  {
+  data = {
+    videoSrc: 'http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400',
+    state: '----',
+  }
+}
+export default new Video();
+</script>
+<style scoped>
+.video {
+  width: 720cpx;
+  height: 350cpx;
+  margin-top: 60cpx;
+}
+</style>
+<script cml-type="json">
+{
+  "base": {}
+}
+</script>

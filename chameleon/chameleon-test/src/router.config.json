@@ -1,0 +1,36 @@
+{
+  "mode": "history",
+  "domain": "https://www.chameleon.com",
+  "routes":[
+    {
+      "url": "/cml/h5/index",
+      "path": "/pages/video/video",
+      "name": "首页",
+      "mock": "index.php"
+    },
+    {
+      "url": "/cml/h5/index",
+      "path": "/pages/index/index",
+      "name": "首页",
+      "mock": "index.php"
+    },
+    {
+      "url": "/cml/h5/index",
+      "path": "/pages/radio/radio",
+      "name": "首页",
+      "mock": "index.php"
+    },
+    {
+      "url": "/cml/h5/index",
+      "path": "/pages/switch/switch",
+      "name": "首页",
+      "mock": "index.php"
+    },
+    {
+      "url": "/cml/h5/index",
+      "path": "/pages/radio-group/radio-group",
+      "name": "首页",
+      "mock": "index.php"
+    }
+  ]
+}
